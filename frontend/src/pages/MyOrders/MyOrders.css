@@ -1,0 +1,314 @@
+.my-orders {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .my-orders h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .my-orders-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .no-orders {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .no-orders p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .no-orders button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .no-orders button:hover {
+    background-color: #ff5252;
+  }
+  
+  .orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .order-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  .order-header {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .order-id {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .order-date {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  .order-items {
+    padding: 1rem;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .order-items h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  
+  .item-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .item-name {
+    font-weight: 500;
+  }
+  
+  .item-quantity {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  .item-price {
+    font-weight: bold;
+  }
+  
+  .order-address {
+    padding: 1rem;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .order-address h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .order-address p {
+    margin: 0.3rem 0;
+    color: #555;
+  }
+  
+  .order-status-section {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #f9f9f9;
+  }
+  
+  .status-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .status-label {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .status-value {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .order-status-food-processing {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .order-status-out-for-delivery {
+    background-color: #d1ecf1;
+    color: #0c5460;
+  }
+  
+  .order-status-delivered {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .payment-status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .payment-status-completed {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .payment-status-failed {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .order-footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .order-amount {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .amount-label {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .amount-value {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ff5252;
+  }
+
+  .order-lookup-form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .order-lookup-form p {
+    margin-bottom: 1.5rem;
+    color: #555;
+    text-align: center;
+  }
+  
+  .order-lookup-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .order-lookup-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .order-lookup-form input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .lookup-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .lookup-button:hover {
+    background-color: #ff5252;
+  }
+  
+  .login-prompt {
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+  }
+  
+  .login-prompt p {
+    margin-bottom: 0.8rem;
+  }
+  
+  .login-button {
+    background-color: transparent;
+    color: #ff6b6b;
+    border: 1px solid #ff6b6b;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #ff6b6b;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .order-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    
+    .order-status-section {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }

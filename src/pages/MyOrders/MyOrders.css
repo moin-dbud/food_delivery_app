@@ -1,0 +1,151 @@
+.my-orders {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.my-orders h1 {
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.no-orders {
+  text-align: center;
+  padding: 3rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-orders p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.no-orders button {
+  padding: 0.8rem 1.5rem;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.no-orders button:hover {
+  background-color: #ff5252;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.order-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #eee;
+}
+
+.order-id span, .order-date span {
+  font-weight: bold;
+  color: #555;
+}
+
+.order-status {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.status-success {
+  background-color: #e6f7e6;
+  color: #28a745;
+}
+
+.status-pending {
+  background-color: #fff8e6;
+  color: #ffc107;
+}
+
+.status-failed {
+  background-color: #ffe6e6;
+  color: #dc3545;
+}
+
+.order-items {
+  padding: 1rem;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  display: flex;
+  align-items: center;
+}
+
+.item-quantity {
+  margin-left: 0.5rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.order-footer {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.order-total {
+  font-size: 1.1rem;
+}
+
+.order-total span {
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .order-status {
+    align-self: flex-start;
+  }
+}
